@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service | One Step</title>
+    <link rel="stylesheet" href="kulu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ONE STEP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="journey.html">Journey</a></li>
+                <li><a href="emergency.html" class="active">Emergency</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="emergency-service">
+            <h2>🚨 Emergency Charging Request</h2>
+            <p>If you're stranded and need immediate assistance, please fill out the form below and share your location. We'll send a mobile charging unit to help you get back on track.</p>
+            
+            <form action="submit_request.php" method="POST" class="emergency-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+
+                <label for="vehicle-model">Vehicle Model</label>
+                <input type="text" id="vehicle-model" name="vehicle-model" required placeholder="Enter your vehicle model">
+
+                <label for="location">Location</label>
+                <textarea id="location" name="location" rows="4" required placeholder="Share your current location (Street, City, Zip)"></textarea>
+
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any other relevant information"></textarea>
+
+                <button type="submit" class="cta-button">📍 Send Location & Request Help</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 One Step EV Recharge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
